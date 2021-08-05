@@ -108,7 +108,7 @@ h2{
     display: none;
     left: 50%;
     margin-left: -200px;
-    max-height: fit-content;
+    height: fit-content;
     box-sizing: border-box;
 }
 .modal.open {
