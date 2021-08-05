@@ -22,3 +22,20 @@ function hideModal(id) {
 	    let bg = document.getElementsByClassName('container-fluid')[0];
 	    bg.classList.remove('wrapper');
 	}
+function showSideBar(){
+	let sidebar = document.getElementsByClassName('sidebar-md')[0];
+	sidebar.style.display='block';
+	let sidebar_sm = document.getElementsByClassName('sidebar-sm')[0];
+	sidebar_sm.style.opacity=0.1;	
+	let mc = document.getElementsByClassName('main-content')[0];
+	mc.style.opacity=0.1;
+}
+function hideSideBar(){
+	let sidebar = document.getElementsByClassName('sidebar-md')[0];
+	sidebar.style.display='none';
+	let sidebar_sm = document.getElementsByClassName('sidebar-sm')[0];
+	sidebar_sm.style.opacity='inherit';	
+	let mc = document.getElementsByClassName('main-content')[0];
+	mc.style.opacity='inherit';
+}
+

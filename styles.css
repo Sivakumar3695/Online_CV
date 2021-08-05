@@ -10,6 +10,7 @@ hr{
 	margin-bottom: 0px;
 	margin-top: 0px;
 	height:	1px;
+	border: 0px;
 }
 body, html{
 	height:100%;
@@ -26,7 +27,7 @@ body, html{
 	padding: 5%;
 
 }
-.sidebar{
+.sidebar-md{
 	display: inline-block;
 	z-index: 1;
   	top: 0;
@@ -34,6 +35,17 @@ body, html{
 	height: 100vh; /* Full height */
 	overflow-y:hidden;
 	position:sticky
+}
+.sidebar-sm{
+	display: inline-block;
+	z-index: 1;
+  	top: 0;
+  	left: 0;
+	height: 100vh; /* Full height */
+	overflow-y:hidden;
+	position:sticky;
+	background-color:#64789e8c;
+	padding: 2px;
 }
 h2{
 	font-size:20px;
@@ -67,17 +79,20 @@ h2{
 	height: 100px;
 	overflow: hidden;
 	padding-left: 20px;
-	padding-top: 10px;	
+	padding-top: 15px;	
 }
 .project-description{
  	-webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
 }
+.project-description-complete{
+	overflow-y: auto;
+}
 .sidebar-colored{
-	height:49%; 
+	height:55%; 
 	background-color:#061192;
-	padding-top: 10px;
-	padding-left: 20px;
-
+	padding-top: 1px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 .sidebar-colored .content{
 	color:white;
@@ -98,16 +113,15 @@ h2{
 .modal {
     box-shadow: 0px 5px 20px rgb(0 0 0 / 50%);
     position: fixed;
-    top: 10%;
+    top: 1%;
     padding: 0px 0px;
     border-radius: 8px;
     background-color: white;
     z-index: 60000;
-    width: 500px;
+    width: 60vh;
     min-height: 100px;
     display: none;
-    left: 50%;
-    margin-left: -200px;
+    margin: auto;
     height: fit-content;
     box-sizing: border-box;
 }
@@ -156,8 +170,7 @@ h2{
 	border:0px;
 }
 .modal-content{
-	width:100%;
-	height: auto;
+	height: fit-content;
 	border:0px;
 	padding: 10px 10px;
 	border-bottom-left-radius: 0px;
@@ -171,7 +184,7 @@ h2{
 	height: auto;
 	border:0px;
 	background-color: white;
-	padding: 20px 20px;
+	padding: 20px 10px;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 	border-top-left-radius: 0px;
@@ -181,12 +194,14 @@ h2{
 	background-color:white;
 	border: 0px;
 }
-.btn-close-x{
+.btn-close-x, .close:focus, .close:hover{
 	cursor: pointer;
 	display: inline-block;
 	float:right;
 	background-color:none;
 	border: 0px;
+	opacity: inherit;
+	color: #0808081c;
 }
 .btn-close{
 	display: inline-block;
@@ -202,24 +217,26 @@ h2{
 	border: 0px;
 }
 .github-img{
-	width:7%;
-	margin-right:10px;
+	width:5%;
+	margin-right:2%;
+	margin-top: 0.5%;
 	display: inline-block;
 	float:right;
 }
 .research-img{
-	width:7%;
-	margin-right:10px;
+	width:5%;
+	margin-right:2%;
+	margin-top: 0.5%;
 	display: inline-block;
 	float:right;
 }
 .project-name{
 	display: inline-block;
 	width: 80%;
-	height:100%
+	height:100%;
 }
 .project-name-logo{
-	height:30px;
+	height: 2vh
 }
 .stats{
 	color:green;
@@ -238,3 +255,123 @@ h2{
 .hide-github{
 	display: none;
 }
+
+
+
+@media only screen and (min-width: 992px) {
+.info-lg{
+	display: inherit;
+}
+
+.info-md{
+	display: none;
+}
+.sidebar-sm{
+	display: none;
+}
+.sidebar-main-close{
+	display: none
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+.info-lg{
+	display: none;
+}
+
+.info-md{
+	display: inherit;
+}
+.sidebar-sm{
+	display: none;
+}
+.sidebar-main-close{
+	display: none
+}
+}
+@media only screen and (min-width: 576px) and (max-width:767px) {
+.info-lg{
+	display: none;
+}
+
+.info-md{
+	display: inherit;
+}
+.sidebar-md{
+	display: none;
+	padding-left: 0px;
+	position: fixed;
+}
+.sidebar-sm-content{
+	font-size: 20px;
+	text-align: center;
+	top: 45%;
+	position:sticky;
+}
+.project-name-logo{
+	height: 6.2vh
+}
+.github-img, .research-img{
+	width: 7%
+}
+
+.modal{
+    width: 50vh;
+}
+.modal-content{
+	overflow-y: auto;
+	height: 50vh;
+}
+
+}
+
+
+@media only screen and (max-width: 575px) and (min-width: 0px){
+.info-lg{
+	display: none;
+}
+
+.info-md{
+	display: inherit;
+}
+.sidebar-md{
+	display: none;
+	padding-left: 0px;
+	position: fixed;
+}
+.sidebar-sm-content{
+	font-size: 20px;
+	text-align: center;
+	top: 45%;
+	position:sticky;
+}
+.project-name-logo{
+	height: 6.2vh
+}
+.project-description, .project-description-complete{
+	padding-top: 5px;	
+}
+.github-img, .research-img{
+	width: 7%
+}
+@media only screen and (max-height: 700px) and (min-height: 0px){
+.modal{
+    width: 50vh;
+}
+.modal-content{
+	overflow-y: auto;
+	height: 50vh;
+}
+}
+@media only screen and (min-height: 700px){
+.modal{
+    width: 40vh;
+}
+.modal-content{
+	height: fit-content;
+}
+}
+
+}
+	
+
