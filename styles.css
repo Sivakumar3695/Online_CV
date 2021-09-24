@@ -113,7 +113,7 @@ h2{
 .modal {
     box-shadow: 0px 5px 20px rgb(0 0 0 / 50%);
     position: fixed;
-    top: 1%;
+    top: 10%;bottom : auto;
     padding: 0px 0px;
     border-radius: 8px;
     background-color: white;
@@ -122,7 +122,7 @@ h2{
     min-height: 100px;
     display: none;
     margin: auto;
-    height: fit-content;
+    /* height: fit-content; */
     box-sizing: border-box;
 }
 .modal.open {
@@ -236,7 +236,7 @@ h2{
 	height:100%;
 }
 .project-name-logo{
-	height: 2vh
+	height: 2em
 }
 .stats{
 	color:green;
