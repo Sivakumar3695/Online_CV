@@ -309,7 +309,7 @@ h2{
 	position:sticky;
 }
 .project-name-logo{
-	height: 6.2vh
+	height: auto
 }
 .github-img, .research-img{
 	width: 7%
@@ -346,7 +346,7 @@ h2{
 	position:sticky;
 }
 .project-name-logo{
-	height: 6.2vh
+	height: auto
 }
 .project-description, .project-description-complete{
 	padding-top: 5px;	
