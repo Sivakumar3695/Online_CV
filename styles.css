@@ -368,7 +368,8 @@ h2{
     width: 40vh;
 }
 .modal-content{
-	height: fit-content;
+	max-height: 50vh;
+	overflow-y: auto;
 }
 }
 
