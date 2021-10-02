@@ -170,7 +170,8 @@ h2{
 	border:0px;
 }
 .modal-content{
-	height: fit-content;
+	max-height: 50vh;
+	overflow-y: auto;
 	border:0px;
 	padding: 10px 10px;
 	border-bottom-left-radius: 0px;
@@ -366,10 +367,6 @@ h2{
 @media only screen and (min-height: 700px){
 .modal{
     width: 40vh;
-}
-.modal-content{
-	max-height: 50vh;
-	overflow-y: auto;
 }
 }
 
