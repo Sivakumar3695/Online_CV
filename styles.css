@@ -193,7 +193,7 @@ h2{
 }
 .show-more button{
 	background-color:white;
-	color: #2a328b
+	color: #2a328b;
 	border: 0px;
 }
 .btn-close-x, .close:focus, .close:hover{
