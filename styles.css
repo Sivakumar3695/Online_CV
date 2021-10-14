@@ -34,7 +34,8 @@ body, html{
   	left: 0;
 	height: 100vh; /* Full height */
 	overflow-y:hidden;
-	position:sticky
+	position:sticky;
+	padding-left: 0px;
 }
 .sidebar-sm{
 	display: inline-block;
