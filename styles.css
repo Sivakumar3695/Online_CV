@@ -59,10 +59,10 @@ h2{
 	font-weight: bold
 }
 .main-content h2{
-	color:#061192;
+	color:#040c6e;
 }
 .main-content .content{
-	padding-left: 30px;
+	padding-left: 50px;
 }
 .post-name{
 	margin-top: 20px;
@@ -89,7 +89,7 @@ h2{
 }
 .sidebar-colored{
 	height:55%; 
-	background-color:#061192;
+	background-color:#000757;
 	padding-top: 1px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -151,7 +151,7 @@ h2{
 } 
 
 .modal-header{
-	background-color: #061192;
+	background-color: #000757;
 	color: white;
 	font-weight:bold;
 	font-size:20px;
@@ -208,7 +208,7 @@ h2{
 	display: inline-block;
 	float:right;
 	background-color:white;
-	color: #061192;
+	color: #000757;
 	border: 0px;
 	padding: 5px 15px;
 }
@@ -247,7 +247,7 @@ h2{
 	font-weight:bold;
 }
 .btn-github{
-	background-color: #061192;
+	background-color: #000757;
 	color: white;
 	padding: 5px 10px;
 	border-radius: 5px;
