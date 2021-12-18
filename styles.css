@@ -16,8 +16,13 @@ body, html{
 	height:100%;
 	overflow-x:hidden;
 	font-family:'Roboto', sans-serif;
-	font-size: 16px;
+	font-size: 15px;
 
+}
+.name-and-photo{
+	height:45%;
+	background-image:url('./img/bg-img-1.jpg'); 
+	background-size: contain;
 }
 .user-photo {
   	border-radius: 50%;
@@ -27,6 +32,11 @@ body, html{
 	margin-right:auto;
 	padding: 5%;
 
+}
+.name-main{
+	text-align:center;
+	font-size:25px;
+	text-decoration:overline;
 }
 .sidebar-md{
 	display: inline-block;
@@ -64,11 +74,23 @@ h2{
 }
 .icon-desc{
 	margin: 10px;
+	align-self: center;
 }
 .main-content h3{
 	font-weight:5px;
 	font-weight: bold
 }
+/*.main-content::after{
+	  content: "";
+	  background: url('./bg-img-2.jpg');
+	  opacity: 0.5;
+	  top: 0;
+	  left: 0;
+	  bottom: 0;
+	  right: 0;
+	  position: absolute;
+	  z-index: -1;   
+}*/
 .service-desc{
 	border-left: 5px solid;
 	padding-left: 15px;
@@ -83,9 +105,10 @@ h2{
 	text-decoration: underline;
 }
 .main-content h2{
-	color:#040c6e;
+	color:#2c3e50;
 	border-bottom: 1px solid;
 	padding-bottom: 10px;
+	font-size: 25px;
 }
 .main-content .content{
 	padding-left: 25px;
@@ -122,12 +145,17 @@ h2{
 	padding-top: 15px;
 	padding-left: 10px;
 	padding-right: 10px;
+	background-image: linear-gradient(91deg, #62798f, #2c3e50);
+	overflow-wrap: anywhere;
 }
 .sidebar-colored .content{
 	color:white;
 	text-align:left;
 	display: flex;
 	flex-direction: row;
+}
+.icon-desc a{
+	color: rgb(0 0 0 / 66%);
 }
 .show-more{
 	color: #061192;
@@ -324,6 +352,9 @@ h2{
 .sidebar-main-close{
 	display: none
 }
+.name-main{
+	text-decoration: none;
+}
 }
 @media only screen and (min-width: 576px) and (max-width:767px) {
 .info-lg{
@@ -358,6 +389,9 @@ h2{
 	overflow-y: auto;
 	height: 50vh;
 }
+.name-main{
+	text-decoration: none;
+}
 
 }
 
@@ -366,7 +400,16 @@ h2{
 .info-lg{
 	display: none;
 }
-
+body{
+	font-size: 12px;
+}
+.name-main{
+	text-decoration: none;
+}
+.sidebar-colored{
+	overflow-wrap: anywhere;
+	font-size: 10px;
+}
 .info-md{
 	display: inherit;
 }
