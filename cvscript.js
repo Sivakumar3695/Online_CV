@@ -22,20 +22,24 @@ function hideModal(id) {
 	    let bg = document.getElementsByClassName('container-fluid')[0];
 	    bg.classList.remove('wrapper');
 	}
-function showSideBar(){
+function showHideSideBar(){
 	let sidebar = document.getElementsByClassName('sidebar-md')[0];
-	sidebar.style.display='block';
-	let sidebar_sm = document.getElementsByClassName('sidebar-sm')[0];
-	sidebar_sm.style.opacity=0.1;	
 	let mc = document.getElementsByClassName('main-content')[0];
-	mc.style.opacity=0.1;
+	let left_sidebar = document.getElementsByClassName('sidebar-left')[0];
+	if (sidebar.style.display == 'block'){
+		sidebar.style.display = 'none';
+		mc.style.opacity='inherit';
+		left_sidebar.style.opacity='inherit';
+	}
+	else{
+		sidebar.style.display = 'block';
+		mc.style.opacity=0.05;
+		left_sidebar.style.opacity=0.05;
+	}
 }
 function hideSideBar(){
 	let sidebar = document.getElementsByClassName('sidebar-md')[0];
 	sidebar.style.display='none';
-	let sidebar_sm = document.getElementsByClassName('sidebar-sm')[0];
-	sidebar_sm.style.opacity='inherit';	
-	let mc = document.getElementsByClassName('main-content')[0];
-	mc.style.opacity='inherit';
+	
 }
 

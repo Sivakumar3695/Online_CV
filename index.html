@@ -1,18 +1,22 @@
 ---
 layout: default
 ---
+<div class="row">
+	<div class="flat-bar flat-bar-top">
+		<div class="toggle-icon-container">
+			<div class="toggle-icon">
+				<span onclick="showHideSideBar()"><i class="fas fa-lg fa-bars"></i></span>
+			</div>
+		</div>
+	</div>
+</div>
 
 <div class="row">
 	{% include sidebar.html %}	
-	<div class="main-content col-md-8 col-sm-8">
-		{% include aboutme.html %}
-		{% include researchinterest.html %}
-  		{% include experience.html %}
-
-		{% include project.html %}
-		{% include publication.html %}
-		{% include awards.html %}
-		{% include service.html %}  
-		{% include news.html %}  		
+	<div class="main-content col-xl-7 col-lg-7 col-md-11 col-sm-11 col-xs-11">
+		{% include main-content-header.html %}		
 	</div>	
+</div>
+<div class="row ">
+	<div class="flat-bar flat-bar-bottom"></div>
 </div>
