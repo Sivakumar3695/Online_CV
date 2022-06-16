@@ -8,6 +8,7 @@ function loadMainContent(class_){
 	if (class_ == null){
 		class_ = 'main-content-name-header';
 	}
+
 	currentContent = document.getElementsByClassName(class_)[0];
 	
 	activeContent = document.getElementsByClassName('main-content-active')[0];

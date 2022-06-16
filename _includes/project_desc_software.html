@@ -1,0 +1,78 @@
+<div class="project-back-btn btn" onclick="closeProjectDetails('project-grp-software')">Return to Projects</div>
+
+<div class="software-project-desc">
+    <img class="software-arch" src="./img/software_arch.png" alt="No Image"/>
+    <button class="collapsible">Kubernetes Infrastructure</button>    
+        <div class="collapsible-content">     
+            <img class="k8s-infrastructure description" src="./img/k8s-infrastructure.png" alt="No Image"/>
+        </div>
+    <button class="collapsible">Tech Stack</button>    
+        <div class="collapsible-content">     
+            <ul class="description">
+                <li>React</li>
+                <li>Spring Boot</li>
+                <li>Node.js <i>(Hapi framework)</i></li>
+                <li>MySQL</li>
+                <li><b>Cloud:</b> AWS S3 Bucket</li>
+                <li><b>Servers:</b> NGINX, Apache Tomcat, Node Server</li>
+                <li><b>DevOps Technologies:</b> Docker, Kubernetes</li>
+            </ul>
+        </div>
+        <button class="collapsible">Front-end optimizations</button>    
+        <div class="collapsible-content">     
+            <ul class="description">
+                <li><b>Code-Splitting:</b>
+                    Performed code-splitting to reduce the initial loading time. 
+                    Major targets of code-splitting are node_modules, react-dom, axios and a few other packages.
+                    I used webpack bundler to perform such code splitting and utilized react lazy loading to load only minimal JS that would be necessary for rendering UI/current page.                
+                </li><br>
+                <li><b>Offline First optimizations:</b>
+                    With the help of service workers and Workbox framework, the offline first approach is implemented. 
+                    All the static assets would be cached by the implemented service worker. The implementation follows Cache-First strategy and hence, assets would hit the cache before hitting the network.             
+                </li>
+            </ul>
+        </div>
+    <button class="collapsible">Project details</button>    
+        <div class="collapsible-content">     
+            <ul class="description">
+                <li>
+                    <div class="mc-project-ls">        <b><a href="https://github.com/Sivakumar3695/k8s-deployment" target="_blank"> K8s-deployment</a></b>
+                        Kubernetes deployment code to declare app cluster Infrastructure as code.        
+                    </div>
+                </li>
+                <li>
+                    <div class="mc-project-ls">        <b><a href="https://github.com/Sivakumar3695/Account-Handler--React" target="_blank"> Accounts SSO Frontend</a></b>
+                        A frontend project for my Accounts application. 
+                        Some of the important features of this application are easy login/signup, Google Authentication, One-Tap login/signup, user information handling and multi-session management.
+                        <div class = "mc-exp-detail">
+                            <b>Framework:</b> React JS <br>
+                            <b>Build Tool:</b> npm, webpack bundler<br>
+                            <b>Docker Image:</b> Check <a href="https://hub.docker.com/repository/docker/sivakumarp3695/my-accounts-sso-frontend" target="_blank">here</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="mc-project-ls">        <b><a href="https://github.com/Sivakumar3695/AccountHandler-Boot" target="_blank"> Accounts SSO Backend</a></b>
+                        Java based backend for my Accounts application. 
+                        The roadmap of this project includes an important feature to provide Single-Sign-On option for all apps (existing & future) across my application cluster.
+                        <div class = "mc-exp-detail">
+                            <b>Framework:</b> JAVA Spring Boot <br>
+                            <b>Build Tool:</b> Maven<br>
+                            <b>Docker Image:</b> Check <a href="https://hub.docker.com/repository/docker/sivakumarp3695/my-accounts-sso" target="_blank">here</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="mc-project-ls">        <b><a href="https://github.com/Sivakumar3695/my-fss" target="_blank"> File Storge Service</a></b>
+                        A storage service application written in Node.js. The service stores files in AWS S3 bucket and provides an endpoint for sotring and retrieving files.
+                        Moving forward, applications across my K8s cluster would use this service for file management.
+                        <div class = "mc-exp-detail">
+                            <b>Framework:</b> Hapi (NodeJS) <br>
+                            <b>Build Tool:</b> npm<br>
+                            <b>Docker Image:</b> Check <a href="https://hub.docker.com/repository/docker/sivakumarp3695/my-storage-svc" target="_blank">here</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+</div>
