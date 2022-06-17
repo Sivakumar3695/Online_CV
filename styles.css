@@ -31,8 +31,7 @@ html {
   /* border-bottom: 3px #b4b3b3 solid; */
 }
 .mc-data-container {
-  padding-top: 7%;
-  padding-left: 1%;
+  padding: 7% 0px 7% 1%;
 }
 .mc-active {
   color: #717171;
@@ -441,8 +440,8 @@ h2 {
 }
 .project-grp {
   width: 45%;
-  height: 100px;
-  border: 3px solid #cccccc17;
+  height: 60px;
+  /* border: 3px solid #cccccc17; */
   font-weight: bolder;
   text-align: center;
   float: left;
@@ -451,12 +450,22 @@ h2 {
   justify-content: center;
   align-items: center;
   color: #565656;
-  margin: 5% 5% 0 0;
-  background: linear-gradient(to right, #eeedf8, #ffffff);
+  margin: 3% 0px;
+  background: linear-gradient(to bottom, #d3e3fa, #d8d7ff87);
+  font-size: inherit;
 }
 
 .project-grp-details {
   display: none;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  background-color: rgb(238 236 253 / 73%);
+  padding: 10px;
 }
 
 .project-back-btn {
@@ -496,7 +505,7 @@ img.k8s-infrastructure {
 }
 .project-grp:active {
   cursor: pointer;
-  background: linear-gradient(to right, #eeedf8, #ffffff);
+  background: linear-gradient(to bottom, #d3e3fa, #d8d7ff87);
   box-shadow: inset 0 1px 1px rgb(0 0 0 / 13%);
 }
 
@@ -537,7 +546,7 @@ img.k8s-infrastructure {
   }
   .collapsible {
     padding: 18px;
-    font-size: 18px;
+    font-size: 16px;
   }
   .info-md {
     display: none;
@@ -595,12 +604,16 @@ img.k8s-infrastructure {
   }
   .main-content-nav-bar button {
     width: 100%;
-    height: 100%;
+    height: 48px;
     text-align: inherit;
+    color: #3f3f3f;
   }
-
+  .mc-nav-bar-title.mc-active button {
+    color: black;
+    font-weight: 500;
+  }
   img.software-arch {
-    width: 100%;
+    width: 60%;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -645,8 +658,17 @@ img.k8s-infrastructure {
   }
   .main-content-nav-bar button {
     width: 100%;
-    height: 100%;
+    height: 48px;
     text-align: inherit;
+    color: #3f3f3f;
+  }
+  .mc-nav-bar-title.mc-active button {
+    color: black;
+    font-weight: 500;
+  }
+  .project-grp {
+    width: 60%;
+    height: 50px;
   }
   img.software-arch {
     width: 100%;
@@ -659,8 +681,13 @@ img.k8s-infrastructure {
   }
   .main-content-nav-bar button {
     width: 100%;
-    height: 100%;
+    height: 48px;
     text-align: inherit;
+    color: #3f3f3f;
+  }
+  .mc-nav-bar-title.mc-active button {
+    color: black;
+    font-weight: 500;
   }
   body {
     font-size: 12px;
@@ -701,6 +728,10 @@ img.k8s-infrastructure {
     width: 7%;
   }
 
+  .project-grp {
+    width: 60%;
+  }
+
   img.software-arch {
     width: 100%;
   }
@@ -721,3 +752,37 @@ img.k8s-infrastructure {
     }
   }
 }
+
+/* font relates css style :start */
+@font-face {
+  font-family: "fontello";
+  src: url("./icons/fontello.eot?4459503");
+  src: url("./icons/fontello.eot?4459503#iefix") format("embedded-opentype"),
+    url("./icons/fontello.woff?4459503") format("woff"),
+    url("./icons/fontello.ttf?4459503") format("truetype"),
+    url("./icons/fontello.svg?4459503#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.app-icon {
+  font-family: "fontello";
+  font-style: normal;
+  font-size: 25px;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+
+  font-variant: normal;
+  text-transform: none;
+
+  line-height: 1em;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-icon.reduced-size {
+  font-size: 20px;
+}
+/* font related css style :end */
