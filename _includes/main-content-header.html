@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="main-content-name-header col-md-12 col-sm-12 col-xs-12">
+	<h3 class="main-content-name">Sivakumar Palanisamy</h3>
+	<div class="main-content-nav-bar">
+		<div class="mc-nav-bar-title mc-about"><button onclick="loadMcContainer('mc-about')">About</button></div>
+		<div class="mc-nav-bar-title mc-ri"><button onclick="loadMcContainer('mc-ri')">Research Interests</button></div>
+		<div class="mc-nav-bar-title mc-exp"><button onclick="loadMcContainer('mc-exp')">Experience</button></div>
+		<div class="mc-nav-bar-title mc-project"><button onclick="loadMcContainer('mc-project')">Projects</a></div>
+		<div class="mc-nav-bar-title mc-pub"><button onclick="loadMcContainer('mc-pub')">Publication</button></div>
+		<div class="mc-nav-bar-title mc-awards"><button onclick="loadMcContainer('mc-awards')">Awards & Other Activities</button></div>
+	</div>
+	<div class="mc-data-container">
+		<div class="mc-about-desc mc-content">{% include aboutme_desc.html %}</div>
+		<div class="mc-ri-desc mc-content">{% include ri_desc.html %}</div>
+		<div class="mc-exp-desc mc-content">{% include exp_desc.html %}</div>
+		<div class="mc-project-desc mc-content">{% include project_desc.html %}</div>
+		<div class="mc-pub-desc mc-content">{% include publication_desc.html %}</div>
+		<div class="mc-awards-desc mc-content">{% include awards_desc.html %}</div>
+	</div>
+    </div>
+    <div class="main-content-news col-md-12 col-sm-12">
+		{% include news.html%}
+    </div>
+</div>

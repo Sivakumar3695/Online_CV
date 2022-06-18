@@ -1,37 +1,52 @@
-<div class="sidebar-sm col-xs-1 col-sm-1">
-	<div class="sidebar-sm-content">
-		<a style="color: #030a5d" onclick="showSideBar()"><i class="fas fa-arrow-circle-right"></i></a>
+
+<div class="sidebar-left col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+	<div class="sidebar-left-content">
+		<div class="sidebar-left-icon">
+			<button style="color: #333333;" aria-label="Home" onclick="loadMainContent('main-content-name-header')">
+				<i class="app-icon icon-home">&#xe804;</i>
+			</button>
+		</div>
+		<div class="sidebar-left-icon">
+			<button style="color: #333333;" aria-label="News" onclick="loadMainContent('main-content-news')">
+				<i class="app-icon reduced-size">&#xf1ea;</i>
+			</button>
+		</div>
 	</div>
 </div>
-<div class="sidebar-md col-md-4 col-sm-4 col-xs-10">
-			<div class="sidebar-main-close">
-				<button style="padding-top:6px; color:black" onclick="hideSideBar()" type="button" class="close btn-close-x" aria-label="Close">
-	  				<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
+<div class="sidebar-md col-xl-3 col-lg-3 col-md-3 col-sm-10 col-xs-10">
 			<div class='name-and-photo'>
-				<img class="user-photo" src="./img/img_avatar.jpg" alt="Avatar">
+				<img class="user-photo" loading="lazy" src="./img_optim/img_avatar.webp" alt="Avatar">
 				<h2 class="name-main">Sivakumar Palanisamy</h2>
 			</div>
 			<div class="sidebar-colored">
 				<div class="content">
-					<div class="icon"> <i class="fas fa-map-marker-alt" style="font-size:24px"></i></div> 
+					<div class="icon"> 
+						<i class="app-icon icon-location">&#xe805;</i>
+					</div> 
 					<div class="icon-desc">76, Periyar Nagar, PRS Road, Chennimalai, Erode, Tamil Nadu, India - 638051.</div>
 				</div>
 				<div class="content">
-					<div class="icon"> <i class="fas fa-phone-alt" style="font-size:24px"></i></div> 
+					<div class="icon"> 
+						<i class="app-icon icon-phone">&#xe801;</i>
+					</div> 
 					<div class="icon-desc">(+91) 80122 - 89764</div>
 				</div>
 				<div class="content">
-					<div class="icon"> <i class="fa fa-envelope" style="font-size:24px"></i></div> 
+					<div class="icon"> 
+						<i class="app-icon reduced-size">&#xf0e0;</i>
+					</div> 
 					<div class="icon-desc">sivakumar.dpalanisamy@gmail.com</div>
 				</div>
 				<div class="content">
-					<div class="icon"> <i class="fab fa-github" style="font-size:24px"></i></div> 
+					<div class="icon"> 
+						<i class="app-icon">&#xf09b;</i>
+					</div> 
 					<div class="icon-desc"> <a href="https://github.com/Sivakumar3695" target="_blank"> https://github.com/Sivakumar3695 </a></div>
 				</div>
 				<div class="content">
-					<div class="icon"> <i class="fab fa-linkedin" style="font-size:24px"></i></div> 
+					<div class="icon"> 
+						<i class="app-icon">&#xf30c;</i>
+					</div> 
 					<div class="icon-desc"> <a href="https://www.linkedin.com/in/sivakumar-dpalanisamy/" target="_blank">https://www.linkedin.com/in/sivakumar-dpalanisamy/ </a></div>
 				</div>
 			</div>
